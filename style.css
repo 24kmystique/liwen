@@ -1,0 +1,664 @@
+body {
+	width: 100%;
+	margin: 0px;
+	font-family: arial;
+	background-color: white; /*#EDF5F5;*/
+}
+
+.headerBkg {
+	/*background-attachment: fixed;*/
+	/*background-color: #ffcb05;*/
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	display: block; /* intially flex */
+	padding-top: 20px;
+	top: 0;
+}
+
+.headerBkgAfter {
+	background-color: green;
+	padding-top: 0;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}
+
+.navbar {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	width: 90%;
+}
+
+.headerLogo {
+	display: inline-block;
+	float: left;
+}
+
+.headerLogo img {
+	max-height: 50px;
+	margin: 5px 50px;
+}
+
+.headerLogo :hover {
+	/* background-color: powderblue; */
+}
+
+.navMenuContainer {
+	transition: width 2s linear 1s;
+}
+
+.navMenuList { /*use class to identify all the other elements */
+	border: solid 5px green;
+	text-align: center;
+	font-size: 15px;
+	font-family: arial;
+	/*font-weight: bold;*/
+	display: inline-block;
+	list-style: none;
+	margin-right: 10px;
+}
+
+.navMenu {
+	text-decoration: none;
+	color: #ffcb05;
+	border: solid 5px red;
+	padding: 10px;
+	text-align: center;
+}
+
+.navMenuList :hover {
+	color: #ffcb05;
+}
+
+.navMenuContainer .current {
+	color: #ffcb05;
+}
+
+
+.navSideMenuImage {
+	border: solid 5px red;
+	background-image: url('./Resources/navBar.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 30px; /* will need to change this to a responsive image */
+	height: 30px;
+	margin: 10px;
+	/*display: none;*/
+	cursor: pointer;
+	visibility: hidden;
+}
+
+.navSideMenuOverlayContainer {
+	border: solid 5px pink;
+	height: 100%;
+	width: 0;
+	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0, 0.9);
+  	position: fixed;
+	z-index: 0;
+	left: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.navSideMenuContent {
+	border: solid 5px yellow;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	text-align: center;
+	background-color: black;
+}
+
+/*.navSideMenuList {
+	list-style: none;
+
+}*/
+
+.navSideMenu {
+	border: solid 5px red;
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 20px;
+}
+
+.navSideMenuContent a:hover {
+	color: #ffcb05;
+}
+
+.navSideMenuContent .current{
+	color: #ffcb05;
+}
+
+/*
+.navMenuContainer :after {
+	display: none;
+}*/
+
+
+.navbarIconNew {
+	border: solid 5px white;
+	background-image: url('./Resources/navigation-icon.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 30px;
+	width: 100%;
+}
+
+.homeMainImageContainer {
+	border: solid 5px white;
+	background-image: url('./Resources/wallpaper.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+
+.homeMainImage {
+	
+}
+
+.homeHiContainer {
+	display: grid;
+	margin: auto;
+	border: solid 5px black;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.homeHiImageContainer {
+	border-radius: 50%;
+	background-image: url('./Resources/olaf.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	max-height: 100%;
+	margin: auto;
+}
+
+.homeHiContainer p {
+	max-width: 450px;
+	margin: auto;
+}
+
+.homeSectionBreakerContainer {
+	border: solid 5px green;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.homeSectionBreaker {
+	display: inline-flex;
+	list-style: none;
+	border: solid 1px pink;
+	background-color: pink;
+	background-size: cover;
+	border-radius: 50%;
+	overflow: hidden;
+	width: 5px;
+	height: 5px;
+	align-content: center;
+	
+}
+
+.home-i-can-do-Container {
+	display: grid;
+	margin: auto;
+	border: solid 5px black;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.home-i-can-help-Container {
+	display: grid;
+	margin: auto;
+	border: solid 5px black;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.home-i-can-help-Container p {
+	max-width: 450px;
+	margin: auto;
+}
+
+.home-get-in-touch-ButtonContainer {
+	border: solid 5px blue;
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.home-get-in-touch-Button {
+	border: solid 5px yellow;
+	border-radius: 10px;
+	background-color: yellow;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.home-get-in-touch-Button:hover {
+	background-color: #ffcb05;
+	border: solid 5px #ffcb05;
+}
+
+.aboutMainImageContainer {
+	border: solid 5px white;
+	background-image: url('./Resources/wallpaper.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100vw;
+	height: 70vh;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.about-who-am-i-Container {
+	border: solid 5px green;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.about-experiences-Container {
+	border: solid 5px green;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+.about-project-ButtonContainer {
+	border: solid 5px pink;
+	border-radius: 10px;
+	background-color: yellow;
+	padding: 15px;
+}
+
+.about-project-Button {
+	text-decoration: none;
+}
+
+/*
+.aboutContentContainer {
+	width: 90%;
+	height: 300px;
+	margin-left: 70px ;
+	margin-right: 70px;
+	margin-bottom: 50px;
+	background-color: white;
+	border-radius: 30px;
+	justify-content: space-between;
+	display: flex;
+}
+
+.aboutContent h1 {
+	font-size: 25px;
+	padding-top: 15px;
+	padding-left: 40px;
+}
+
+.aboutContent p {
+	margin-left: 40px;
+	margin-right: 40px;
+	text-align: justify;
+	line-height: 1.5;
+}
+*/
+/*
+#aboutContent {
+	text-align: justify;
+	line-height: 1.5;
+	max-width: 50%;
+	margin: auto;
+}*/
+
+.contactHeader {
+	display: block;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.contactHeader p {
+	margin: auto;
+	width: 50%;
+}
+
+.contactContent {
+	display: block;
+	margin: auto;
+	width: 50%;
+}
+
+.contactSubmit {
+	display: block;
+	margin: auto;
+}
+/*
+.projectBlockContainer {
+	border: solid 5px green;
+	display: flex;
+	justify-content: center;
+}
+
+.projectContentContainer {
+	border: solid 5px black;
+	display: inline-flex;
+	width: 250px;
+	height: 250px;
+}
+
+.projectImage {
+	border: solid 5px red;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.projectContentOverlay {
+	border: solid 5px blue;	
+	position: absolute;
+	overflow: hidden;
+	display: flex;
+	width: 100%;
+}
+
+.projectContentText {
+	border: solid 5px pink;
+	position: absolute;
+}
+*/
+
+
+.projectBlockContainer {
+	border: solid 5px green;
+	display: flex;
+	justify-content: center;
+}
+
+.projectContentContainer {
+	border: solid 5px black;
+	display: inline-flex;
+	width: 250px;
+	height: 250px;
+}
+
+.project-1 {
+	background-image: url('./Resources/olaf-1.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.project-2 {
+	background-image: url('./Resources/olaf-2.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.project-3 {
+	background-image: url('./Resources/olaf-3.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.project-4 {
+	background-image: url('./Resources/olaf-4.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.projectContentHeading {
+	border: solid 5px pink;
+	width: 250px;
+	height: 250px;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+}
+
+.projectContentContainer:hover .projectImage {
+	border: solid 5px blue;
+	opacity: 0.5;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.projectContentContainer:hover .projectContentHeading {
+	opacity: 1;
+}
+
+.contact-email-Container {
+	border: solid 5px green;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+}
+
+
+/*
+.contactGoogleForm {
+	overflow: hidden;
+}
+
+.contactGoogleForm iframe {
+	display: block;
+	margin: auto;
+	position: static;
+	margin-top: 80px;
+	margin-bottom: 60px;
+	width: 100%;
+}
+*/
+
+footer {
+	display: flex; /*initially flex */
+	/*position: fixed; *//* element from normal document flow; wont stick with header ; initially fixed*/
+	bottom: 0; /* 0 distance between element bottom edge and bottome edge of its containing block */
+	justify-content: center;
+	background-color: #D3D3D3;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	font-family: 'Times New Roman', serif;
+	margin: auto;
+}
+
+.contactGoogleForm {
+
+}
+
+.footerContactIcon img {
+	max-height: 20px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.navMenuContainer {
+		display: none;
+	}
+
+	.navSideMenuImage {
+		visibility: visible;
+	}
+
+	.projectBlockContainer {
+		border: solid 5px green;
+		display: block;
+		justify-content: center;
+	}
+	
+	.projectContentContainer {
+		border: solid 5px black;
+		display: flex;
+		width: 250px;
+		height: 250px;
+		margin: auto;
+	}
+	
+	.project-1 {
+		background-image: url('./Resources/olaf-1.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.project-2 {
+		background-image: url('./Resources/olaf-2.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.project-3 {
+		background-image: url('./Resources/olaf-3.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.project-4 {
+		background-image: url('./Resources/olaf-4.jpeg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		overflow: hidden;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.projectContentHeading {
+		border: solid 5px pink;
+		width: 250px;
+		height: 250px;
+		opacity: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		font-size: 12px;
+	}
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.navMenuContainer {
+		display: none;
+	}
+
+	.navSideMenuImage {
+		visibility: visible;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.navMenuContainer {
+		display: contents;
+	}
+
+	.navSideMenuImage {
+		visibility: hidden;
+	}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

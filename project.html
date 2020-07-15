@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang='en-US'>
+	<head> 
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Projects</title>
+		<link rel='icon' href='./Resources/cookie_icon.ico'>
+		<link rel='stylesheet' href='./style.css'>
+		
+	</head>
+	<body>
+		<div class='aboutMainImageContainer'>
+		</div>
+		<div class='headerBkg' id='headerBkgId'>
+			<div class='navbar'>
+				<div class='navSideMenuImage' id='navSideMenuImageId' onclick='openSideNav()'>
+				</div>
+
+				<a id='logoHome' href='./home.html'>
+					<div class='headerLogo'>
+						<img src='./Resources/cookie_icon.ico'>
+					</div>
+				</a>
+				<nav class='navMenuContainer'>
+					<ul>
+						<li class='navMenuList'><a class='navMenu' id='home' href='./home.html' rel='next'>HOME</a></li> <!-- use id to identify to one element Home -->
+						<li class='navMenuList'><a class='navMenu' id='about' href='./about.html'>ABOUT</a></li>
+						<li class='navMenuList'><a class='current navMenu' id='projects' href='./project.html'>PROJECTS</a></li>
+						<li class='navMenuList'><a class='navMenu' id='contact' href='./contact.html'>CONTACT</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class='navSideMenuOverlayContainer' id='navSideMenuOverlayContainerId'>
+				<div class='navSideMenuContent' id='navSideMenuContentId'>
+					<a class='navSideMenu' id='home' href='./home.html' rel='next'>HOME</a>
+					<a class='navSideMenu' id='about' href='./about.html'>ABOUT</a>
+					<a class='current navSideMenu' id='projects' href='./project.html'>PROJECTS</a>
+					<a class='navSideMenu' id='contact' href='./contact.html'>CONTACT</a>
+				</div>
+			</div>
+
+		</div>
+		<!--
+		<section class='projectBlockContainer'>
+			<div class='projectContentContainer'>
+				<img class='projectImage' src='./Resources/olaf-1.jpeg'>
+				<div class='projectContentOverlay'>
+					<div class='projectContentText'>TOTO</div>
+				</div>
+			</div>
+			<div class='projectContentContainer'>
+				<img class='projectImage' src='./Resources/olaf-2.jpeg'>
+				<div class='projectContentOverlay'>
+					<div class='projectContentText'>CUP Q</div>
+				</div>
+			</div>
+			<div class='projectContentContainer'>
+				<img class='projectImage' src='./Resources/olaf-3.jpeg'>
+				<div class='projectContentOverlay'>
+					<div class='projectContentText'>Crowd Go Where</div>
+					<div class='projectContentText'>coming soon...</div>
+				</div>
+			</div>
+		</section>
+
+		<section class='projectBlockContainer'>
+			<div class='projectContentContainer'>
+				<img class='projectImage' src='./Resources/olaf-4.jpeg'>
+				<div class='projectContentOverlay'>
+					<div class='projectContentText'>Next Project</div>
+				</div>
+			</div>
+			<div class='projectContentContainer'>
+				<img class='projectImage' src='./Resources/olaf-1.jpeg'>
+				<div class='projectContentOverlay'>
+					<div class='projectContentText'>Mext Project</div>
+				</div>
+			</div>
+			<div class='projectContentContainer'>
+				<img class='projectImage' src='./Resources/olaf-1.jpeg'>
+				<div class='projectContentOverlay'>
+					<div class='projectContentText'>Next Project</div>
+				</div>
+			</div>
+		</section>
+		-->
+		
+		<section class='projectBlockContainer'>
+			<article class='projectContentContainer'>
+				<div class='project-1 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>TOTO</h3>
+				</div>
+			</article>
+			<article class='projectContentContainer'>
+				<div class='project-2 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>CUP Q</h3>
+				</div>
+			</article>
+			<article class='projectContentContainer'>
+				<div class='project-3 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>Crowd Go Where</h3>
+					<p>coming soon...</p>
+				</div>
+			</article>
+		</section>
+
+		<section class='projectBlockContainer'>
+			<article class='projectContentContainer'>
+				<div class='project-4 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>Crytography Challenge</h3>
+					<p>coming soon...</p>
+				</div>
+			</article>
+			<article class='projectContentContainer'>
+				<div></div>
+				<div>project 2</div>
+			</article>
+			<article class='projectContentContainer'>
+				<div></div>
+				<div>project 3</div>
+			</article>
+		</section>
+		
+		<!--
+		<div class='project-select-group'>
+			<label class='project-select-header' for='project-select'>I am looking for:
+			<select name='typeOfProject' id='project-select-content'>
+				<option value=''>--Please choose an option--</option>
+				<option value='GUI Game Application'>GUI Game Application</option>
+				<option value='poster'>Poster</option>
+				<option value='website'>Website</option>
+				<option value='mobile app'>Mobile Application</option>
+			</select>
+			</label>
+		</div>
+
+		<div class='projectHeader'>
+			<h1>GUI Game Application</h1>
+			<div class='projectContentContainer'>
+				<div class='projectContent'>
+					<h2>TOTO</h2>
+					<p>A betting game where user guess a number between 0 to 10 (inclusive) and starts with a wallet amount of $3. Before a random number is generated, user will have to place a $1 bet irregardless whether a number is entered. If user guessed the correct number, user will receive an addition of $5 in their wallet. However, if user used up all the money in his wallet, he will no longer be able to bet.</p>
+				</div>
+
+				<iframe class='projectTOTO' width="560" height="315" src="https://www.youtube.com/embed/mIZGvgKiDTM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<h1>Mobile Application</h1>
+			<div class='projectContentContainer'>
+				<div class='projectContent'>
+					<h2>Crowd Go Where 2</h2>
+					<p>####</p>
+				</div>
+				
+			</div>
+			<div class='projectContentContainer'>
+				<div class='projectContent'>
+					<h2>Crowd Go Where</h2>
+					<p>####</p>
+				</div>
+				
+			</div>
+			<h1>Website</h1>
+			<div class='projectContentContainer'>
+				<p>This website is coded entirely by Li Wen.</p>
+			</div>
+			
+		</div>
+		-->
+		<footer>
+			2020 Ong Li Wen, All Rights Reserved.
+			<a href='https://www.linkedin.com/in/li-wen-ong-7a6056179/' target='_blank'> <!-- open linkedin profile on a new window/tab -->
+				<div class='footerContactIcon'>
+					<img src='./social-media-logos/png/027-linkedin.png'>
+				</div>
+			</a>
+		</footer>
+		<script src='./main.js' async></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
