@@ -1,0 +1,164 @@
+<!DOCTYPE html> 
+<html lang='en-US'>
+	<head> 
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>Projects</title>
+		<link rel='icon' href='./Resources/cookie_icon.ico'>
+		<link rel='stylesheet' href='./style.css'>
+		<link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+	</head>
+	<body>
+		<div class='aboutMainImageContainer'>
+			<div class='aboutNeonImageContainer'>
+				<img class='aboutNeonImage' src='./Resources/projects_neon.png'>
+			</div>
+		</div>
+
+		<div class='headerBkg' id='headerBkgId'>
+			<div class='navbar'>
+				<div class='navSideMenuImage' id='navSideMenuImageId' onclick='openSideNav()'>
+				</div>
+
+				<!-- <a id='logoHome' href='./home.html'>
+					<div class='headerLogo'>
+						<img src='./Resources/cookie_icon.ico'>
+					</div>
+				</a> -->
+				<nav class='navMenuContainer'>
+					<ul>
+						<li class='navMenuList'><a class='navMenu' id='home' href='./home.html' rel='next'>HOME</a></li> <!-- use id to identify to one element Home -->
+						<li class='navMenuList'><a class='navMenu' id='about' href='./about.html'>ABOUT</a></li>
+						<li class='navMenuList'><a class='current navMenu' id='projects' href='./project.html'>PROJECTS</a></li>
+						<li class='navMenuList'><a class='navMenu' id='contact' href='./contact.html'>CONTACT</a></li>
+					</ul>
+				</nav>
+
+			</div>
+
+			<div class='navSideMenuOverlayContainer' id='navSideMenuOverlayContainerId'>
+				<div class='navSideMenuContent' id='navSideMenuContentId'>
+					<a class='navSideMenu' id='home' href='./home.html' rel='next'>HOME</a>
+					<a class='navSideMenu' id='about' href='./about.html'>ABOUT</a>
+					<a class='current navSideMenu' id='projects' href='./project.html'>PROJECTS</a>
+					<a class='navSideMenu' id='contact' href='./contact.html'>CONTACT</a>
+				</div>
+			</div>
+
+		</div>
+		
+		<section class='projectBlockContainer projectPadding'>
+			<article class='projectContentContainer'>
+				<div class='project-1 projectImage'></div>
+				<div class='projectContentHeading' onclick='projectPopup()'>
+					<h3>CUP Q</h3>
+				</div>
+			</article>
+			<!-- TEMPLATE FOR FUTURE PROJECTS
+			<article class='projectContentContainer'>
+				<div class='project-2 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>CUP Q</h3>
+				</div>
+			</article>
+			<article class='projectContentContainer'>
+				<div class='project-3 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>Crowd Go Where</h3>
+					<p>coming soon...</p>
+				</div>
+			</article>
+			-->
+		</section>
+
+		<!--TEMPLATE FOR FUTURE PROJECTS
+		<section class='projectBlockContainer'>
+			<article class='projectContentContainer'>
+				<div class='project-4 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>Project Title</h3>
+					<p>coming soon...</p>
+				</div>
+			</article>
+			<article class='projectContentContainer'>
+				<div class='project-4 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>Project Title</h3>
+					<p>coming soon...</p>
+				</div>
+			</article>
+			<article class='projectContentContainer'>
+				<div class='project-4 projectImage'></div>
+				<div class='projectContentHeading'>
+					<h3>Project Title</h3>
+					<p>coming soon...</p>
+				</div>
+			</article>
+		</section>
+		-->
+
+		<div class='projectPopupContainer' id='projectPopupContainerId'>
+
+			<div class='projectPopupPadding'></div>
+
+			<div class='projectPopupImageContent'>
+				<div class='projectPopupImageContainer'>
+					<img class='projectPopupImage' src='./Resources/cupq_main.png'>
+					<img class='projectPopupImage' src='./Resources/cupq_spec.png'>
+					<img class='projectPopupImage' src='./Resources/cupq_design.png'>
+				</div>
+
+				<div class='projectPopupSliderContainer projectPopupSliderLeft' onclick='changeProjectPopupImage(-1)'>
+					<img class='projectPopupSliderLeftImage' src='./Resources/left_arrow.png'>
+				</div>
+
+				<div class='projectPopupSliderContainer projectPopupSliderRight' onclick='changeProjectPopupImage(1)'>
+					<img class='projectPopupSliderRightImage' src='./Resources/right_arrow.png'>
+				</div>
+			</div>
+
+			<div class='projectPopupExitImageContainer' onclick='projectPopupExitButton()'>
+				<img class='projectPopupExitImage' src='./Resources/exitButton.png'>
+			</div>			
+
+			<div class='projectPopupText'>
+				<h2 class='projectPopupTitle'>CUP Q</h2>
+				<div class='projectPopupTagContainer'>
+					<div class='projectPopupTag'>Adobe Illustrator</div>
+					<div class='projectPopupTag'>Design Framework</div>
+					<div class='projectPopupTag'>User Journery Map</div>
+				</div>
+				<h3 class='projectPopupHeading'>Description</h3>
+				<p><span class='projectPopupNameItalics'>CUP Q</span> is a multi-functional cup that encourages user to Bring Your Own Bottle (BYOB) to purchase a takeaway drink instead of consuming one-time use plastic cups. This was a 14-week group project where SUTD students were tasked to solved an identified problem in the school community.</p>
+				<h3 class='projectPopupHeading'>How It Works</h3>
+				<ul>
+					<li class='projectHowItWorksList'>Step 1: Remove the top bottle.</li>
+					<li class='projectHowItWorksList'>Step 2: Purchase drink using the bottom cup.</li>
+					<li class='projectHowItWorksList'>Step 3: Drink stall owners will scan the QR code.</li>
+					<li class='projectHowItWorksList'>Step 4: Pay using the QR code.</li>
+				</ul>
+				<h3 class='projectPopupHeading'>Inspiration</h3>
+				<p>There have been many environmental solutions that promotes people to BYOB such as restricting drink stall owners from providing straws or collapsible cup where its portability and compact design is used to motivate user to bring their cup anywhere they go. These solutions range from gadgets to policies however, BYOB is still not a common practice. We hope this inspires SUTD community to adopt more enviromentally-friendly habits.</p>
+			</div>
+
+		</div>
+		
+		<footer class='footerContainer'>
+			<div class='socialMediaContent'>Connect with me on
+				<a class='socialMediaLinkedin' href='https://www.linkedin.com/in/li-wen-ong-7a6056179/' target='_blank'>Linkedin</a>
+			</div>			
+			<div class='footer-all-rights-Container'>&copy 2020 Ong Li Wen. All Rights Reserved.</div>
+		</footer>
+		
+		<script src='./main.js' async></script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
