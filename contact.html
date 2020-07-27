@@ -3,6 +3,9 @@
 	<head> 
 		<meta charset='utf-8'>
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name='author' content='Ong Li Wen'>
+		<meta name='description' content='This web showcases Li Wen&#39s past projects that are developed using Python, HTML, CSS, Javascript and Adobe Illustrator.'>
+		<meta name='keywords' content='Computer science, Cyber security, student, internship, SUTD'>
 		<title>Contact Li Wen</title>
 		<link rel='icon' href='./Resources/cookie_icon.ico'>
 		<link rel='stylesheet' href='./style.css'>
@@ -10,7 +13,7 @@
 		
 	</head>
 	<body>
-		<div class='aboutMainImageContainer'>
+		<div class='aboutMainImageContainer MainImageContainer' id='aboutMainImageContainerId'>
 			<div class='aboutNeonImageContainer'>
 				<img class='aboutNeonImage' src='./Resources/contact_neon.png'>
 			</div>
@@ -28,7 +31,7 @@
 
 				<nav class='navMenuContainer'>
 					<ul>
-						<li class='navMenuList'><a class='navMenu' id='home' href='./home.html' rel='next'>HOME</a></li> <!-- use id to identify to one element Home -->
+						<li class='navMenuList'><a class='navMenu' id='home' href='./home.html' rel='next'>HOME</a></li>
 						<li class='navMenuList'><a class='navMenu' id='about' href='./about.html'>ABOUT</a></li>
 						<li class='navMenuList'><a class='navMenu' id='projects' href='./project.html'>PROJECTS</a></li>
 						<li class='navMenuList'><a class='current navMenu' id='contact' href='./contact.html'>CONTACT</a></li>
@@ -48,32 +51,23 @@
 
 		</div>
 
+		<div class='topbottomPadding'></div>
+
 		<section class='contact-email-Container projectPadding'>
 			<article>
+				<!-- <div class='contactImageContainer'>
+					<img class='contactImage' src='./Resources/contact_letter_8.png'>
+				</div> -->
+				<img class='contactImage' src='./Resources/contact_letter.png'>
 				<h2>Drop Me An Email</h2>
 				<p>Interested in working together?</p>
 				<p>Or just want to say hi?</p>
 				<p>I would love to get in touch with you!</p>
-				<a href='mailto:itsliwens@gmail.com'>itsliwens&#64gmail.com</a>
+				<a href='mailto:liwen_ong@mymail.sutd.edu.sg'>liwen_ong@mymail.sutd.edu.sg</a>
 			</article>
 		</section>
 
-
-		<!--
-		<form method='post' class='contactForm'>
-			<label class='contactHeader' for='nameContact'><p>Name</p></label>
-			<input class='contactContent' type='text' name='clientName' id='clientName'>
-			<label class='contactHeader' for='emailContact'><p>Email Address</p></label>
-			<input class='contactContent' type='email' name='clientEmail' placeholder='youremailaddress@mail.com' id='clientEmail'>
-			<input class='contactSubmit' type='submit' name='contactDetails' value='Submit Form'>
-		</form>
-		-->
-
-		<!--
-		<div class='contactGoogleForm'>
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9oFKjXDGk7B3hSNIwItrtTiNZlkC3K8NlxKLuKa1iejMZ9Q/viewform?embedded=true" width="640" height="864" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		</div>
-		-->
+		<div class='topbottomPadding'></div>
 
 		<footer class='footerContainer'>
 			<div class='socialMediaContent'>Connect with me on
