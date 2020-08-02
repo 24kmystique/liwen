@@ -27,7 +27,7 @@ p, h3 {
 	/*background-attachment: fixed;*/
 	/*background-color: #ffcb05;*/
 	height: 60px;
-	width: 100%;
+	width: 100vw;
 	position: fixed;
 	display: block;
 	padding-top: 20px;
@@ -157,13 +157,14 @@ p, h3 {
 }
 
 .homeHiContainer {
-	/*border: solid 5px black;*/
+	/*border: solid 5px blue;*/
 	display: grid;
 	margin: auto;
 	text-align: center;
 }
 
 .homeHiImageContainer {
+	/*border: solid 5px green;*/
 	border-radius: 50%;
 	background-image: url('./Resources/liwen.jpeg');
 	background-position: 20% 60%;
@@ -630,6 +631,10 @@ p, h3 {
 
 	.navSideMenuImage {
 		visibility: visible;
+	}
+
+	.homeSectionBreaker {
+		width: 300px;
 	}
 
 	.projectBlockContainer {
