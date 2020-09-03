@@ -408,7 +408,7 @@ p, h3 {
 
 .projectPopupContainer {
 	/*border: solid 5px orange;*/
-	background-color: white;
+	background-color: #FAFAFA;
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
