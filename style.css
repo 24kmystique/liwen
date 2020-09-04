@@ -227,6 +227,7 @@ p, h3 {
 	border-radius: 10px;
 	background-color: #ffcb05;
 	text-decoration: none;
+	font-weight: bold;
 	padding: 15px;
 	color: navy;
 }
@@ -284,6 +285,7 @@ p, h3 {
 	border-radius: 10px;
 	background-color: #ffcb05;
 	color: navy;
+	font-weight: bold;
 	text-decoration: none;
 	padding: 15px;
 }
@@ -307,8 +309,23 @@ p, h3 {
 .projectContentContainer {
 	/*border: solid 5px black;*/
 	display: inline-flex;
-	width: 250px;
-	height: 250px;
+	flex-direction: column;
+}
+
+.projectTitleContainer {
+	/*border: solid 5px pink;*/
+	text-align: center;
+}
+
+.projectTitle {
+	margin-top: 3px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+.projectTitleKeywords {
+	margin-top: 5px;
+	color: #4f5d75;
 }
 
 .project-1 {
@@ -323,6 +340,8 @@ p, h3 {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	width: 250px;
+	height: 250px;
 }
 /* TEMPLATE FOR FUTURE PROJECTS
 .project-2 {
@@ -530,6 +549,27 @@ p, h3 {
 
 .projectPopupHeading {
 	margin-bottom: -5px;
+}
+
+.projectPopupBottomCloseButtonContainer {
+	/*border: solid 5px red;*/
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.projectPopupBottomCloseButton {
+	border-radius: 10px;
+	background-color: #f08080;
+	color: #faf9f9;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 15px;
+}
+
+.projectPopupBottomCloseButton:hover {
+	background-color: #f08080;
+	border: solid 5px #f08080;
 }
 
 .projectEnlargeBackground {
